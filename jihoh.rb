@@ -22,7 +22,7 @@ def jihoh
   # 10 分単位でスケジューラ実行が組まれているので、その時間内で時間内で実行される時間帯を設定する
   minutes_between = (50..59)
   
-  # return unless minutes_between.include?(now.min)
+  return unless minutes_between.include?(now.min)
 
   message = "✂----- #{Time.at(now.to_i + 60 * 60).hour}:00 くらいになったぞい ------✂"
   notify(message)
