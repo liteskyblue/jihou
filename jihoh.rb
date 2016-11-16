@@ -27,5 +27,3 @@ def jihoh
   message = "✂----- #{Time.at(now.to_i + 60 * 60).hour}:00 くらいになったぞい ------✂"
   notify(message)
 end
-
-jihoh
